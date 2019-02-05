@@ -12,10 +12,9 @@
       <div class="top_menu__wrapper">
         <h1 class="logo">Техномарт</h1>
         <img src="img/logo-technomart-head.svg" width="220" height="40" alt="Логотип «Техномарт»">
-        <form class="search clearfix" action="/" method="get">
-          <label class="visualy-hidden" for="input-field">Поиск</label>
-          <input class="search__input-field" type="text" name="input-field" id="input-field" placeholder="Поиск:">
-          <button class="search-submit" type="submit">Отправить</button>
+        <form class="search clearfix" action="/echo" method="get">
+          <input class="search-field" id="search-field" type="search" name="search" placeholder="Поиск">
+          <button class="search-submit icon-search" id="search-submit" type="submit"></button>
         </form>
         <a class="top-menu__link top-menu__link-bookmaker" href="#">Заклдаки: 0</a>
         <a class="top-menu__link top-menu__link-cart" href="#">Корзина: 0</a>
@@ -41,7 +40,7 @@
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li class="site-navigation-item">
-            <a class="site-navigation-link current-link">Главная</a>
+            <a href="index.html" class="site-navigation-link current-link">Главная</a>
           </li>
           <li class="site-navigation-item">
             <a href="#" class="site-navigation-link">Компания</a>
@@ -85,8 +84,8 @@
       <a class="button-about" href="#">Подробнее о компании</a>
     </section>
     <section class="about-us-map">
-      <h2 class="title">Контакты</h2>
-      <p class="text">
+      <h2 class="about-us-title">Контакты</h2>
+      <p class="about-us-text">
         Вы можете забрать товар сами,<br>
         заехав в нащ офис:
       </p>
@@ -104,7 +103,7 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <p class="logo-block">
-        <a class="logo">Техномарт</a>
+        <a class="logo" href="index.html">Техномарт</a>
       </p>
       <ul class="site-navigation">
         <li class="site-navigation-item">
@@ -150,7 +149,7 @@
       <!--Ещё один вопрос (ul + span)Блочный-->
       <div class="social">
         <a class="social__btn social__btn--vk" href="#" aria-label="Техномарт в Вконтакте">Вконтакте</a>
-        <a class="social__btn social__btn--fb" href="#"aria-label="Техномарт на Фейсбуке">Фейсбук</a>
+        <a class="social__btn social__btn--fb" href="#" aria-label="Техномарт на Фейсбуке">Фейсбук</a>
         <a class="social__btn social__btn--in" href="#" aria-label="Техномарт в Инстаграм">Инстаграм</a>
       </div>
       <table class="developers">
@@ -179,7 +178,7 @@
       <textarea name="message" id="write-us-message" placeholder="В свободной форме" tabindex="-1"></textarea>
     </p class="block-textarea">
     <p class="block-button">
-      <button class="button" type="submit" tabindex="-1" aria-label="Закрыть форма">Отправить</button>
+      <button class="button" type="submit" tabindex="-1" aria-label="Закрыть форму">Отправить</button>
     </p>
     <button class="close" tabindex="-1"><span class="visualy-hidden"></span></button>
   </section>

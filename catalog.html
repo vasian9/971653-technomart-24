@@ -13,7 +13,8 @@
         <h1 class="logo">Техномарт</h1>
         <img src="img/logo-technomart-head.svg" width="220" height="40" alt="Логотип «Техномарт»">
         <form class="search clearfix" action="/echo" method="get">
-          <input class="text" placeholder="Поиск:">
+          <input class="search-field" id="search-field" type="search" name="search" placeholder="Поиск">
+          <button class="search-submit icon-search" id="search-submit" type="submit"></button>
         </form>
         <a class="top-menu__link top-menu__link-bookmaker" href="#">Заклдаки: 0</a>
         <a class="top-menu__link top-menu__link-cart" href="#">Корзина: 10</a>
@@ -43,7 +44,7 @@
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li class="site-navigation-item">
-            <a class="site-navigation-link current-link">Главная</a>
+            <a href="index.html"class="site-navigation-link current-link">Главная</a>
           </li>
           <li class="site-navigation-item">
             <a href="#" class="site-navigation-link">Компания</a>
@@ -228,7 +229,7 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <p class="logo-block">
-        <a class="logo">Техномарт</a>
+        <a class="logo" href="index.html" >Техномарт</a>
       </p>
       <ul class="site-navigation">
         <li class="site-navigation-item">
@@ -273,7 +274,7 @@
       </p>
       <div class="social">
         <a class="social__btn social__btn--vk" href="#" aria-label="Техномарт в Вконтакте">Вконтакте</a>
-        <a class="social__btn social__btn--fb" href="#"aria-label="Техномарт на Фейсбуке">Фейсбук</a>
+        <a class="social__btn social__btn--fb" href="#" aria-label="Техномарт на Фейсбуке">Фейсбук</a>
         <a class="social__btn social__btn--in" href="#" aria-label="Техномарт в Инстаграм">Инстаграм</a>
       </div>
       <table class="developers">
