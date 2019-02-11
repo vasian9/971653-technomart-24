@@ -2,13 +2,24 @@ body {
     margin: 0;
     padding: 0; 
     
-    font-family: "Cuprum-Regular", Arilal, sans-serif;
+    font-family: 'Cuprum', Arilal, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
 
     background-color: #ffffff;
     color: #000000;
+}
+header > * {
+    outline: 2px solid deeppink;
+}
+header > * > * {
+    outline: 2px dashed lime;
+    outline-offset: -2px;
+}
+header > * > * > * {
+    outline: 2px dotted dodgerblue;
+    outline-offset: -4px;
 }
 
 .header-wrapper {
@@ -19,6 +30,12 @@ body {
 
 a {
     text-decoration: none;
+}
+
+ul { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -41,7 +58,7 @@ a {
 .main-header{
     width: 100%;
     height: 320px;
-    font-family: "Cuprum-Regular", Arial, sans-serif;
+    font-family: 'Cuprum', Arial, sans-serif;
 
     background-color: #f4f7f9;
     color: #ee3643;
@@ -55,6 +72,18 @@ a {
     display: flex;
 }
 /* Вопрос, можно ли использовать rgba и color в одном CSS */
+
+main > * {
+    outline: 2px solid deeppink;
+}
+main > * > * {
+    outline: 2px dashed lime;
+    outline-offset: -2px;
+}
+main > * > * > * {
+    outline: 2px dotted dodgerblue;
+    outline-offset: -4px;
+}
 
 .main-header-logo {
     display: block;
@@ -185,7 +214,7 @@ a {
 .header-info-block {
     width: 196px;
     height: 60px;
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: 'Cuprum', Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
     font-style: italic;
@@ -198,7 +227,7 @@ a {
 
 .top-info__phone {
     height: 21px;
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: 'Cuprum', Arial, sans-serif;
     font-size: 21px;
     font-style: normal;
     text-decoration: none;
@@ -211,7 +240,7 @@ a {
 
 
 .top-info__adress {
-    font-family: "Cuprum" Arial, sans-serif;
+    font-family: 'Cuprum' Arial, sans-serif;
     font-size: 14px;
     line-height: 26px;
     font-style: normal;
@@ -280,7 +309,7 @@ a {
 }
 
 .page-content{
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
     line-height: 1.38;
     letter-spacing: normal;
@@ -314,16 +343,13 @@ a {
 }
 
 .filter-brands div {
-display: block;
-border: none;
+    display: block;
+    border: none;
 
-
-font-family: "PT Sans Bold", arial, sans-serif;
-line-height: 20px;
-text-transform: uppercase;
-color: #000000;
-/* background-color: */
-/* border-radius: */
+    font-family: 'PT Sans Bold', Arial, sans-serif;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
 }
 
 .filter-title {
@@ -348,7 +374,7 @@ color: #000000;
     justify-content: space-between;
     flex-wrap: wrap;
     
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
@@ -360,6 +386,7 @@ color: #000000;
 .catalog-galery {
     display: flex; 
     flex-wrap: wrap;
+    justify-content: space-around;
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
@@ -382,6 +409,18 @@ color: #000000;
     color: #ffffff;
 }
 
+.main-footer > * {
+    outline: 2px solid deeppink;
+}
+.main-footer > * > * {
+    outline: 2px dashed lime;
+    outline-offset: -2px;
+}
+.main-footer > * > * > * {
+    outline: 2px dotted dodgerblue;
+    outline-offset: -4px;
+}
+
 .footer-top-panel {
     display: flex;
     flex-wrap: wrap; 
@@ -395,6 +434,22 @@ color: #000000;
     height: 68px;
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
     background-color: #ee3643;
+}
+
+.footer-navigation a {
+    color: #f1f5f7;
+    width: 69px;
+    height: 13px;
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.catalog-navigation a {
+    color: #ffd180;
+    width: 56px;
+    height: 13px;
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 18px;
 }
 /* стили подвала */
 
@@ -413,7 +468,7 @@ color: #000000;
     display: flex;
     justify-content: space-around;
 
-    font-family: "Cuprum" Arial, sans-serif;
+    font-family: 'Cuprum', Arial, sans-serif;
     font-size: 16px;
 
     line-height: 1.13;
@@ -423,7 +478,7 @@ color: #000000;
 }
 
 .developers {
-    font-family: "Cuprum" Arial, sans-serif;
+    font-family: 'Cuprum' Arial, sans-serif;
     font-size: 16px;
     letter-spacing: normal;
     text-align: left;
@@ -433,3 +488,10 @@ color: #000000;
 .developers-title {
     color: #ffffff;
 }
+/* pop ups */
+
+.modal > * {
+    display: none;
+}
+
+

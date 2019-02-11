@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">  
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Техномарт</title>
@@ -30,6 +31,7 @@
     </div>
     <div class="header-wrapper">
       <section class="info">
+        <h2 class="visually-hidden">Навигация пользователя</h2>
         <div class="header-info-block">
           <p class="header-info-block_text">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
         </div>
@@ -105,10 +107,10 @@
       <a class="about-us-map_mappreviewe" href="#">
         <img src="img/map-small.png" width="300" height="158" alt="Карта проезда: Большая Конюшенная ул.,19">
       </a>
-      <button class="button-write-us" href="#" aria-label="Закрыть форму">Заблудились? Напишите нам!</button>
+      <button class="write-us" aria-label="Закрыть форму">Заблудились? Напишите нам!</button>
       <div class="full-map">
         <img src="img/map-big.png" width="940" height="446" alt="Большая карта с адресом">
-        <button class="close" tabindex="-1" class="visualy-hidden">Закрыть</button>
+        <button class="visually-hidden" tabindex="-1">Закрыть</button>
       </div>
     </section>
   </main>
@@ -181,6 +183,7 @@
     </div>
   </footer>
   <section class="modal modal-write-us">
+    <h2 class="visually-hidden">Обратная связь</h2>
     <p class="block-input">
       <label for="write-us-name">Ваше имя:</label>
       <input type="text" name="name" id="write-us-name" placeholder="Имя Фамилия" tabindex="-1"> 
@@ -192,7 +195,7 @@
     <p class="block-textarea">
       <label for="write-us-message">Текст письма:</label>
       <textarea name="message" id="write-us-message" placeholder="В свободной форме" tabindex="-1"></textarea>
-    </p class="block-textarea">
+    </p>
     <p class="block-button">
       <button class="button" type="submit" tabindex="-1" aria-label="Закрыть форму">Отправить</button>
     </p>
