@@ -3,70 +3,82 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Техномарт</title>
 </head>
 
 <body>
-  <header>
-    <div class="top-menu">
-      <div class="top_menu__wrapper">
-        <h1 class="logo">Техномарт</h1>
-        <img src="img/logo-technomart-head.svg" width="220" height="40" alt="Логотип «Техномарт»">
-        <form class="search clearfix" action="/echo" method="get">
-          <input class="search-field" id="search-field" type="search" name="search" placeholder="Поиск">
-          <button class="search-submit icon-search" id="search-submit" type="submit"></button>
+  <header class="main-header">
+    <div class="user-header">
+      <div class="user-navigation container">
+        <a class="main-header-logo">
+          <img src="img/logo-technomart-head.svg" width="110" height="18" alt="Логотип «Техномарт»">
+        </a>
+        <form class="search-clearfix" action="/echo" method="get">
+          <label class="visually-hidden" for="search">Поиск по сайту</label>
+          <input class="search" type="search" id="search" name="search" placeholder="Поиск:">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+            <path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+          </svg>
         </form>
-        <a class="top-menu__link top-menu__link-bookmaker" href="#">Заклдаки: 0</a>
-        <a class="top-menu__link top-menu__link-cart" href="#">Корзина: 0</a>
-        <a class="top-menu__link top-menu__link-oreder" href="#">Оформить заказ</a>
+        <a class="user-header__link bookmaker__link" href="#">Закладки: 0</a>
+        <a class="user-header__link cart__link" href="#">Корзина: 0</a>
+        <a class="user-header__link order__link" href="#">Оформить заказ</a>
       </div>
     </div>
     <div class="header-wrapper">
-      <div class="header-info-block">
-        <p class="header-info-block_text">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
-      </div>
-      <div class="top-info__contacts">
-        <span class="top-info__phone">+7 (812) 555-05-55</span>
-        <p class="top-info__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      </div>
-      <!--Вопрос после проверки №1-->
-      <ul class="for-guests">
-        <li><a class="login" href="#">Войти</a></li>
-        <li><a class="registration" href="#">Регистрация</a>
-      </ul>
-    </div>
-    
-    <div class="header-third-line container">
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li class="site-navigation-item">
-            <a href="index.html" class="site-navigation-link current-link">Главная</a>
-          </li>
-          <li class="site-navigation-item">
-            <a href="#" class="site-navigation-link">Компания</a>
-          </li>
-          <li class="site-navigation-item">
-            <a href="catalog.html" class="site-navigation-link">Каталог</a>
-          </li>
-          <li class="site-navigation-item">
-            <a href="#" class="site-navigation-link">Новости</a>
-          </li>
-          <li class="site-navigation-item">
-            <a href="#" class="site-navigation-link">Спецпредложения</a>
-          </li>
-          <li class="site-navigation-item">
-            <a href="#" class="site-navigation-link">Доставка</a>
-          </li>
-          <li class="site-navigation-item">
-            <a href="#" class="site-navigation-link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+      <section class="info">
+        <div class="header-info-block">
+          <p class="header-info-block_text">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
+        </div>
+        <div class="top-info__contacts">
+          <span class="top-info__phone">+7 (812) 555-05-55</span>
+          <p class="top-info__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+        <div class="user-block">
+          <ul class="user-block-top-clearfix">
+            <li>
+              <a class="login" href="#">Войти</a>
+            </li>
+            <li>
+              <a class="registration" href="#">Регистрация</a>
+            </li>  
+          </ul>
+        </div>  
+      </section> 
+      <div class="header-third-line container">
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li class="site-navigation-item">
+              <a href="index.html" class="site-navigation-link current-link">Главная</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="#" class="site-navigation-link">Компания</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="catalog.html" class="site-navigation-link">Каталог</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="#" class="site-navigation-link">Новости</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="#" class="site-navigation-link">Спецпредложения</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="#" class="site-navigation-link">Доставка</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="#" class="site-navigation-link contacts-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>  
     </div>
   </header>
   <main class="conteiner">
     <section class="about-us">
-      <!--Вопрос после проверки №2 (title) & class "text"-->
       <h2 class="title">Компания «Техномарт»</h2>
       <p class="text">
         Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> 
@@ -101,30 +113,34 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
+    <div class="footer-top-panel">
       <p class="logo-block">
-        <a class="logo" href="index.html">Техномарт</a>
+        <a class="footer-logo" href="index.html">
+          <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип интернет-магазина Техномарт">
+        </a>
       </p>
-      <ul class="site-navigation">
-        <li class="site-navigation-item">
-          <a href="#" class="site-navigation-link">Компания</a>
+      <address class="footer-contacts">
+        <p class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        +7 (812) 555-05-55</p>
+      </address>
+      <ul class="footer-navigation">
+        <li class="footer-navigation-item">
+          <a href="#" class="footer-navigation-link">Компания</a>
+        <li class="footer-navigation-item">
+          <a href="#" class="sfooternavigation-link">Новости</a>
         </li>
-        <li class="site-navigation-item">
-          <a href="#" class="site-navigation-link">Новости</a>
+        <li class="footer-navigation-item">
+          <a href="#" class="footer-navigation-link">Каталог</a>
         </li>
-        <li class="site-navigation-item">
-          <a href="#" class="site-navigation-link">Каталог</a>
+          <li class="footer-navigation-item">
+          <a href="#" class="footer-navigation-link">Доставка</a>
         </li>
-        <li class="site-navigation-item">
-          <a href="#" class="site-navigation-link">Доставка</a>
-        </li>
-        <li class="site-navigation-item">
-          <a href="#" class="site-navigation-link">Контакты</a>
+        <li class="footer-navigation-item">
+          <a href="#" class="footer-navigation-link">Контакты</a>
         </li>
       </ul>
-      <p class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-        +7 (812) 555-05-55</p>
-      <ul class="catalo-navigation">
+  
+      <ul class="catalog-navigation">
         <li class="catlog-navigation-item">
           <a href="#" class="catalog-navigation-link">Материалы</a>
         </li>
@@ -134,7 +150,7 @@
         <li class="catalog-navigation-item"> 
           <a href="#" class="catalog-navigation-link">Инструмент</a>
         </li>
-        <li>
+        <li class="catalog-navigation-item">
           <a href="#" class="catalog-navigation-link">Спецпредложения</a>
         </li>
       </ul>

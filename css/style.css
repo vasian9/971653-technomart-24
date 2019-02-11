@@ -1,0 +1,435 @@
+body {
+    margin: 0;
+    padding: 0; 
+    
+    font-family: "Cuprum-Regular", Arilal, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.header-wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 940px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+  
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/*user menu*/
+
+.main-header{
+    width: 100%;
+    height: 320px;
+    font-family: "Cuprum-Regular", Arial, sans-serif;
+
+    background-color: #f4f7f9;
+    color: #ee3643;
+}
+
+.user-header {
+    background-color: #293449;
+}
+
+.user-navigation{
+    display: flex;
+}
+/* Вопрос, можно ли использовать rgba и color в одном CSS */
+
+.main-header-logo {
+    display: block;
+    width: 110px;
+    padding: 13px 55px 3px 55px;
+
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    background-color: #ee3643; 
+}
+
+.main-header-logo:hover {
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    background-color: #ca2c37;
+}
+
+.main-header-logo:active {
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    background-color: #ba2732;
+}
+
+.search-clearfix {
+    position: relative;
+    margin: 0 auto 0 0;
+    padding: 0;
+}
+
+.search-clearfix svg {
+    position: absolute;
+    left: 17px;
+    top: 12px;
+    width: 17px; 
+    height: 17px;
+    opacity: 0.3;
+}
+
+.search {
+    border: 0;
+    width: 270px;
+    height: 42px; 
+    padding-left: 49px;
+    background-color: #293449;
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 18px;
+    
+ }
+
+.search:hover{
+    background-color: #212a3a;
+}
+
+.search:hover + svg,
+.search:focus + svg {
+    opacity: 1;
+}
+
+.search:focus ~ svg > path {
+    fill: #ee3643;
+}
+
+.search:focus {
+    color: #000000;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.search::placeholder {
+    color: #ffffff;
+}
+
+.user-header__link {
+    position: relative;
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+    text-decoration: 0;
+}
+
+.bookmaker__link {
+    padding: 12px 31px 12px 45px;
+}
+
+.bookmaker__link:hover {
+    background-color: #212a3a
+}
+
+.bookmaker__link::before {
+    position: absolute;
+}
+
+.cart__link {
+    padding: 12px 31px 12px 45px;
+}
+
+.cart__link:hover {
+    background-color: #212a3a
+}
+
+.cart__link::before {
+    position: absolute;
+}
+
+.order__link {
+    padding: 12px 21px;
+    background-color: #63a63e;
+}
+
+.order__link:hover {
+    background-color: #5fbb2d;
+}
+
+.order__link::before {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #518534;
+}
+
+/*contacts & main title */
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   /* margin-top: 46px;
+    margin-bottom: 40px; */
+}
+
+.header-info-block {
+    width: 196px;
+    height: 60px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ee3643;
+}
+
+.top-info__phone {
+    height: 21px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    text-decoration: none;
+    position: relative;
+    border: solid 3px #ffffff;
+    text-align: center;
+    color: #e9292a;
+    padding: 9px 0px;
+}
+
+
+.top-info__adress {
+    font-family: "Cuprum" Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-style: normal;
+    color: #32425c;
+    margin: 0;
+    padding-left: 12px;
+    padding-top: 3px;
+}
+
+.user-block {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    margin-bottom: 28px;
+}
+
+.user-block-top-clearfix {
+    padding-left: 10px;
+}
+
+.login,
+.registration {
+    font-family: inherit;
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    background-color: #ffffff;
+    padding: 12px 24px;
+}
+.login {
+    position: relative;
+    padding-left: 50px;
+}
+
+.site-navigation {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation-item {
+    border-bottom: solid 5px #293449;
+}
+
+.site-navigation-link {
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 17px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 19px 30px;
+    background-color: #32425c;
+    display: block;
+}
+
+.current-link {
+    padding-right: 55px;
+}
+
+.contacts-link {
+    padding-right: 57px;
+}
+
+.page-content{
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.breadcrumbs a, span {
+    display: inline-block;
+    vertical-align: middle;
+
+    text-transform: uppercase;
+}
+
+.page-title {
+    margin: 19px 0 20px;
+    padding: 30px 0 30px 32px; 
+
+    font size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #32425c;
+
+    background-color: #f2f6f8;
+}
+
+.catalog-colums: {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-brands div {
+display: block;
+border: none;
+
+
+font-family: "PT Sans Bold", arial, sans-serif;
+line-height: 20px;
+text-transform: uppercase;
+color: #000000;
+/* background-color: */
+/* border-radius: */
+}
+
+.filter-title {
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: bold;
+    
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.filter-brands label,
+.filter-supply label {
+    
+    font-family: inherit;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.catalog-galery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+
+    background-color: #ffffff
+    color: #000000;
+}
+
+.catalog-galery {
+    display: flex; 
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    
+    list-style: none;
+}
+
+.product-card {
+    width: 220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+    background-color: #ffffff;
+}
+
+.main-footer {
+    width: 100%;
+
+    background-color: #32425c;
+    color: #ffffff;
+}
+
+.footer-top-panel {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 940px;
+    margin: auto;
+    padding-bottom:49px:  
+}
+
+.logo-block {
+    width: 220px;
+    height: 68px;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    background-color: #ee3643;
+}
+/* стили подвала */
+
+.copyright__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 1200px;
+    margin: auto;
+    padding-top: 37px;
+    padding-bottom: 37px;
+
+    background-color: #293449;
+}
+
+.copyright p { 
+    display: flex;
+    justify-content: space-around;
+
+    font-family: "Cuprum" Arial, sans-serif;
+    font-size: 16px;
+
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.developers {
+    font-family: "Cuprum" Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffd180;
+}
+
+.developers-title {
+    color: #ffffff;
+}
