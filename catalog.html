@@ -82,7 +82,7 @@
       </div> 
     </div>
   </header>
-  <main class="page-content">
+  <main class="inner-page">
     <ul class="breadcrumbs container-center">
       <li><a class="breadcrumbs-item icon-home" href="index.html">Главная</a></li>
       <li><a class="breadcrumbs-item" href="catalog.html">Каталог</a></li>
@@ -90,43 +90,44 @@
       <li><span class="breadcrumbs-item">Перфораторы</span></li>
     </ul>
     <h1 class="inner-header-title page-title">Перфораторы</h1>
-
-    <div class=catalog-columns>
-      <fieldset class="filter filter-brands">
-        <h3 class="filter-title">Производители</h3>
-        <div>
-          <input class="filer-brands-checkbox visually-hidden" id="checkbox-1" type="checkbox" name="checkbox" value="bosch" checked>
-          <label class="filter-brands-item" for="checkbox-1">Bosch</label>
-        </div> 
-        <div>
-          <input class="filer-brands-checkbox visually-hidden" id="checkbox-2" type="checkbox" name="checkbox" value="interscol">
-          <label class="filter-brands-item" for="checkbox-2">Интерскол</label>
-        </div>
-        <div>
-          <input class="filer-brands-checkbox visually-hidden" id="checkbox-3" type="checkbox" name="checkbox" value="makita" checked>
-          <label class="filter-brands-item" for="checkbox-3">Makita</label>
-        </div>
-        <div>
-          <input class="filer-brands-checkbox visually-hidden" id="checkbox-4" type="checkbox" name="checkbox" value="devalt">
-          <label class="filter-brands-item" for="checkbox-4">Dewalt</label>
-        </div>
-        <div>
-          <input class="filer-brands-checkbox visually-hidden" id="checkbox-5" type="checkbox" name="checkbox" value="hitachi">
-          <label class="filter-brands-item" for="checkbox-5">Hitachi</label>
-        </div>
-      </fieldset>
-      <fieldset class="filter filter-supply">
-        <h3 class="filter-title">Питание</h3>
-        <div>
-          <input class="filter-supply-radio" id="radio-1" type="radio" name="radiogroup" value="battery" checked>
-          <label class="filter-supply-item" for="radio-1">Аккумуляторные</label>
-        </div>
-        <div> 
-          <input class="filter-supply-radio" id="radio-2" type="radio" name="radiogroup" value="mains">
-          <label class="filter-supply-item" for="radio-2">Сетевые</label>
-        </div>
-      </fieldset>
-      <button class="catalog-btn" type="submit">Показать</button>
+    <div class="catalog-columns">
+      <section class:="filters">
+        <fieldset class="filter filter-brands">
+          <h3 class="filter-title">Производители</h3>
+          <div>
+            <input class="filer-brands-checkbox visually-hidden" id="checkbox-1" type="checkbox" name="checkbox" value="bosch" checked>
+            <label class="filter-brands-item" for="checkbox-1">Bosch</label>
+          </div> 
+          <div>
+            <input class="filer-brands-checkbox visually-hidden" id="checkbox-2" type="checkbox" name="checkbox" value="interscol">
+            <label class="filter-brands-item" for="checkbox-2">Интерскол</label>
+          </div>
+          <div>
+            <input class="filer-brands-checkbox visually-hidden" id="checkbox-3" type="checkbox" name="checkbox" value="makita" checked>
+            <label class="filter-brands-item" for="checkbox-3">Makita</label>
+          </div>
+          <div>
+            <input class="filer-brands-checkbox visually-hidden" id="checkbox-4" type="checkbox" name="checkbox" value="devalt">
+            <label class="filter-brands-item" for="checkbox-4">Dewalt</label>
+          </div>
+          <div>
+            <input class="filer-brands-checkbox visually-hidden" id="checkbox-5" type="checkbox" name="checkbox" value="hitachi">
+            <label class="filter-brands-item" for="checkbox-5">Hitachi</label>
+          </div>
+        </fieldset>
+        <fieldset class="filter filter-supply">
+          <h3 class="filter-title">Питание</h3>
+          <div>
+            <input class="filter-supply-radio" id="radio-1" type="radio" name="radiogroup" value="battery" checked>
+            <label class="filter-supply-item" for="radio-1">Аккумуляторные</label>
+          </div>
+          <div> 
+            <input class="filter-supply-radio" id="radio-2" type="radio" name="radiogroup" value="mains">
+            <label class="filter-supply-item" for="radio-2">Сетевые</label>
+          </div>
+        </fieldset>
+        <button class="catalog-btn" type="submit">Показать</button>
+      </section>
       <!-- Здесь будет сортировка -->
       <section class="catalog-galery">
         <div class="product-card">
