@@ -41,11 +41,11 @@
         </div>
         <div class="user-block">
           <ul class="user-block-top-clearfix">
-            <li>
-              <a class="login" href="#">Войти</a>
+            <li class="login">
+              <a href="#">Войти</a>
             </li>
-            <li>
-              <a class="registration" href="#">Регистрация</a>
+            <li class="registration">
+              <a href="#">Регистрация</a>
             </li>  
           </ul>
         </div>  
@@ -78,6 +78,54 @@
     </div>
   </header>
   <main class="conteiner">
+    <section class="services">
+      <div class="sevices-wrapper">
+        <div class="service-title">
+          <h2>Сервис</h2>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        </div>
+        <!--slider -->
+        <div class="service-slider-list">
+          <div class="service-slider-buttons">
+            <ul class="service-btn">
+              <li>
+                <button type="button" class="btn-delivery btn-hover btn-checked" aria-label="Кнопка информация о доставке" checked>
+                  Доставка
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn-gurantee btn-hover" aria-label="Кнопка информация о гарантии">
+                  Гарантия
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn-loans btn-hover" aria-label="Кнопка иформация кредите">
+                  Кредит
+                </button>
+              </li> 
+            </ul>
+          </div>
+          <div class="service-slider-info">
+            <div class="slider-info-delivery ">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! 
+                Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
+            </div>
+            <div class="slider-info-guarantee service-item">
+              <h3>Гарантия</h3>
+              <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его вогаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+              Дом уж восстановите как нибудь сами.</p>
+            </div>
+            <div class="slider-info-loans service-item">
+              <h3>Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+              <a href="#">Отправить заявку</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <article class="about-us">
       <section class="about-us-menu">
         <h2 class="title">Компания «Техномарт»</h2>
@@ -115,15 +163,17 @@
   </main>
   <footer class="main-footer">
     <div class="footer-top-panel">
-      <p class="logo-block">
-        <a class="footer-logo" href="index.html">
-          <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип интернет-магазина Техномарт">
-        </a>
-      </p>
-      <address class="footer-contacts">
-        <p class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-        +7 (812) 555-05-55</p>
-      </address>
+      <div class="footer-top-info">
+        <p class="logo-block">
+          <a class="footer-logo" href="index.html">
+            <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип интернет-магазина Техномарт">
+          </a>
+        </p>
+        <address class="footer-contacts">
+          <p class="main-footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          +7 (812) 555-05-55</p>
+        </address>
+      </div>
       <div class="footer-navigation">
         <ul class="footer-navigation-top">
           <li class="footer-navigation-item">
@@ -164,11 +214,10 @@
         2010-2017 Компания «Техномарт»<br>
         Все права защищены
       </p>
-      <!--Ещё один вопрос (ul + span)Блочный-->
       <div class="social">
-        <a class="social__btn social__btn--vk" href="#" aria-label="Техномарт в Вконтакте">Вконтакте</a>
-        <a class="social__btn social__btn--fb" href="#" aria-label="Техномарт на Фейсбуке">Фейсбук</a>
-        <a class="social__btn social__btn--in" href="#" aria-label="Техномарт в Инстаграм">Инстаграм</a>
+        <a class="social__btn social__btn--vk" href="#" aria-label="Техномарт в Вконтакте"></a>
+        <a class="social__btn social__btn--fb" href="#" aria-label="Техномарт на Фейсбуке"></a>
+        <a class="social__btn social__btn--in" href="#" aria-label="Техномарт в Инстаграм"></a>
       </div>
       <table class="developers">
         <tr>
