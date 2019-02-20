@@ -10,17 +10,6 @@ body {
     background-color: #ffffff;
     color: #000000;
 }
-header > * {
-    outline: 2px solid deeppink;
-}
-header > * > * {
-    outline: 2px dashed lime;
-    outline-offset: -2px;
-}
-header > * > * > * {
-    outline: 2px dotted dodgerblue;
-    outline-offset: -4px;
-}
 
 .header-wrapper {
     margin: 0 auto;
@@ -76,17 +65,6 @@ ul {
 }
 /* Вопрос, можно ли использовать rgba и color в одном CSS */
 
-main > * {
-    outline: 2px solid deeppink;
-}
-main > * > * {
-    outline: 2px dashed lime;
-    outline-offset: -2px;
-}
-main > * > * > * {
-    outline: 2px dotted dodgerblue;
-    outline-offset: -4px;
-}
 
 .main-header-logo {
     display: inline-block;
@@ -229,6 +207,7 @@ main > * > * > * {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    margin: 49px auto;
     margin-left: 52px;
 }
 
@@ -239,18 +218,14 @@ main > * > * > * {
     font-weight: normal;
     font-style: italic;
     margin: 0;
-    padding-top: 46px;
     color: #ee3643;
 }
 
 .top-info__contacts {
+    display: block;
     margin-left: 40px;
 }
 
-.top-info__contacts, 
-.user-block-top-clearfix {
-    padding-top: 46px;
-}
 
 .top-info__contacts 
 .phone {
@@ -280,9 +255,8 @@ main > * > * > * {
     line-height: 26px;
     font-style: normal;
     color: #32425c;
-    margin: 0;
     padding-left: 12px;
-    padding-top: 3px;
+    margin: 10px auto;
 }
 .user-block ul {
     display: flex;
@@ -290,6 +264,7 @@ main > * > * > * {
 
 .login a,
 .registration a {
+    display: block;
     font-size: 21px;
     line-height: 21px;
     color: #000000;
@@ -297,7 +272,6 @@ main > * > * > * {
 }
 
 .login a {
-
     background-image: url(../img/icon-login.1.svg);
     background-repeat: no-repeat;
     background-position: 14px, 50%;
@@ -319,13 +293,17 @@ main > * > * > * {
     background-image: url(../img/icon-login.svg);
 }
 
+.registration a:hover {
+    color: #ee3643;
+}
 
-.user-block-top {
-    padding-top: 57px;
+.registration a:active {
+    color: #c5c5c5;
 }
 
 .user-block-top 
 .profile-link {
+    display: block;
     font-size: 21px;
     line-height: 21px;
     color: #000000;
@@ -381,7 +359,7 @@ background-image: url(../img/icon-user.1.svg);
     line-height: 18px;
     text-decoration: underline;
     color: #32425c;
-    padding-top: 10px;
+    padding-top: 10px; 
 }
 
 /* main navigation стили */
@@ -478,13 +456,14 @@ background-image: url(../img/icon-user.1.svg);
 
 .catalog-columns {
     display: flex; 
+    
 }
-
-
+.filters {
+    border: none;
+}
 
 .filter-brands div {
     display: block;
-    border: none;
 
     font-family: 'PT Sans Bold', Arial, sans-serif;
     line-height: 20px;
@@ -603,7 +582,6 @@ background-image: url(../img/icon-user.1.svg);
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
-    
     list-style: none;
 }
 
@@ -809,8 +787,10 @@ background-image: url(../img/icon-user.1.svg);
 }
 /* сервисы slaider info */
 
+
+
 .services {
-    width: 100%;
+    width: auto;
     justify-content: space-between;
 }
 
@@ -958,13 +938,19 @@ background-image: url(../img/icon-user.1.svg);
     line-height: 20px;
 }
 
+
 .about-us li:not(:last-child) {
     padding-bottom: 20px;
 }
 
-.about-us li::before {
+.about-us .partners-item li::before {
+    display: flex;
+    margin-top: 8px;
+    content: " ";
+    width: 25px;
+    height: 2px;
     position: absolute;
-    margin-left: -30px;
+    left: -30px;
     color: #ee3643;
 }
 
@@ -1073,48 +1059,36 @@ background-image: url(../img/icon-user.1.svg);
 }
 /* стили подвала */
 
-.copyright > * {
-    outline: 2px solid deeppink;
-}
-.copyright > * > * {
-    outline: 2px dashed lime;
-    outline-offset: -2px;
-}
-.copyright > * > * > * {
-    outline: 2px dotted dodgerblue;
-    outline-offset: -4px;
-}
-
-.copyright  {
-    height: 109px;
-    background-color: #293449;
-    margin: 0px;
-}
-
 .copyright__wrapper {
+    display: flex;
+    justify-content: center;
+    height: 107px;
+    background-color: #293449;
+}
+
+.copyright__wrapper__info {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 35px auto;
+
     width: 940px;
-    margin: auto; 
-    padding-top: 39px;
 }
 
-.copyright p { 
-    display: flex;
-    justify-content: space-around;
+
+.copyright-info p { 
     font-family: 'Cuprum', Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.13;
-    letter-spacing: normal;
     text-align: left;
     color: #ffffff;
-
+    margin: 0px auto;
+    line-height: 1.13;
 }
 
 .social {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 160px;
 }
 
 .social a {
@@ -1147,18 +1121,54 @@ background-image: url(../img/icon-user.1.svg);
     background-position: center;
 }
 
-.developers {
+.feedback {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feedback p {
+    margin: 0;
+}
+
+.feedback-info {
+    margin-left: 118px;
+}
+
+.developed-info {
+    margin-left: 54px;
+}
+
+.feedback-info p,
+.developed-info p {
     font-family: 'Cuprum', Arial, sans-serif;
     font-size: 16px;
     letter-spacing: normal;
     text-align: left;
-    color: #ffd180;
-}
-
-.developers-title {
     color: #ffffff;
+    line-height: 1.13;
+    text-decoration: none; 
+}
+.feedback-info a, 
+.developed-info a {
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffd180;
+    text-decoration: none; 
 }
 
+.feedback-info a:hover, 
+.developed-info a:hover {
+    text-decoration: underline;    
+}
+
+.feedback-info a:active, 
+.developed-info a:active {
+    color: rgb(238,54,67);
+    text-decoration: none;    
+}
 /* pop ups */
 
 
@@ -1169,12 +1179,27 @@ background-image: url(../img/icon-user.1.svg);
     font-weight: 400;
     color: #000000;
 }
+/*
 
-.modal > * {
+.modal-write-us > * {
     display: none;
 }
-
+*/
 .full-map > * {
     display: none;
 }
+
+.modal-write-us {
+    font-family: 'Cuprum', "Arial", sans-serif;
+    box-shadow: inset 0 7px 0 0 #ff5357, 
+    0 20px 60px -2px black;
+    width: 620px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    display: none;
+}
+
 
