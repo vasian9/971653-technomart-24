@@ -326,15 +326,15 @@
     </section>
   </footer>
   <section class="modal modal-goods-add">
-    <h2 class="modal-basket">Информация о товаре</h2>
-    <p class="block-content">
-      Товар добавлен в корзину!
-    </p>
-    <p class="block-button">
+    <div class="modal-goods-header">
+      <p>Товар добавлен в корзину</p>
+    </div> 
+    <label for="close-modal-goods-add" class="visually-hidden">Закрытие окна</label>
+    <button type="button" id="close-modal-goods-add" class="close-modal-goods" tabindex="-1"></button>
+    <div class="block-button-order">
       <button class="button order-button" type="submit" tabindex="-1">Офомрить заказ</button>
       <button class="button continue-button" type="submit" tabindex="-1">Продолжить покупки</button>
-    </p>
-    <button class="close" tabindex="-1"><span class="visually-hidden">Закрыть</span></button>
+    </div>
   </section>
 </body>
 </html>

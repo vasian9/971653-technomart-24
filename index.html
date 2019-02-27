@@ -77,9 +77,9 @@
       </nav>  
     </div>
   </header>
-  <main class="conteiner">
+  <main class="main-index">
     <section class="promo">
-      <h2 class="visually-hiden">Промо</h2>
+      <h2 class="visually-hidden">Промо</h2>
       <div class="promo-left">
         <section class="promo-item promo-materials">
           <div class="icon-new"><span class="visually-hidden">Новинка</span></div>
@@ -139,7 +139,7 @@
           </div>         
         </section>
       </div>
-      <div class="promo-left">
+      <div class="promo-right">
         <section class="promo-column promo-technics">
           <h3>Техника</h3>
           <a class="promo-link" href="#">Для стройки</a>
@@ -154,13 +154,13 @@
         </section>
       </div>
     </section>
-    <section class="products-conteiner">
+    <section class="products-container">
       <div class="products-title">
         <h2>Популярные товары</h2>
         <a href="#">Все популярные товары</a>
       </div>
       <div class="products-item">
-      <div class="product-card">
+      <div class="product-card-popular">
           <div class="product-card-image">
             <img src="img/Bosch-9000.png" alt="Перфоратор BOSCH BFG 9000">
           </div>
@@ -172,7 +172,7 @@
             <button class="button hidden-button bookmark-button" type="button" tabindex="-1">В закладки</button>
           </div>
         </div>
-        <div class="product-card">
+        <div class="product-card-popular">
           <div class="product-card-image">
             <img src="img/Bosch-3000.png" alt="Перфоратор BOSCH BFG 3000">
           </div>
@@ -184,7 +184,7 @@
             <button class="button hidden-button bookmark-button" type="button" tabindex="-1">В закладки</button>
           </div>
         </div>
-        <div class="product-card">
+        <div class="product-card-popular">
           <div class="product-card-image">
             <img src="img/Bosch-6000.png" alt="Перфоратор BOSCH BFG 6000">
           </div>
@@ -197,7 +197,7 @@
             <button class="button hidden-button bookmark-button" type="button" tabindex="-1">В закладки</button>
           </div>
         </div>
-        <div class="product-card">
+        <div class="product-card-popular">
           <div class="product-card-image">
             <img src="img/Bosch-2000.png" alt="Перфоратор BOSCH BFG 2000">
           </div>
@@ -209,13 +209,13 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="brands-conteiner">
-      <div class="brands-conteiner-title">
+    </section> 
+    <section class="brands-container">
+      <div class="brands-container-title">
         <h2>Популярные производители</h2>
         <a href="#">Все производители</a>
       </div>
-      <div class="brands-conteiner-list">
+      <div class="brands-container-list">
         <a class="brands__item" href="#">
           <img src="img/bosch.png" width="126" height="37" alt="Bosch">
         </a>
@@ -311,16 +311,12 @@
         <h2 class="about-us-title">Контакты</h2>
         <p class="about-us-text">
           Вы можете забрать товар сами,<br>
-        заехав в наш офис:
+          заехав в наш офис:
         </p>
         <a class="about-us-map-block" href="#">
           <img src="img/map-small.png" width="300" height="158" alt="Карта проезда: Большая Конюшенная ул.,19">
         </a>
         <button class="write-us" aria-label="Закрыть форму">Заблудились? Напишите нам!</button>
-        <div class="full-map">
-          <img src="img/map-big.png" width="940" height="446" alt="Большая карта с адресом">
-          <button class="visually-hidden" tabindex="-1">Закрыть</button>
-        </div> 
       </section>
     </article> 
   </main>
@@ -399,26 +395,39 @@
     </section>
   </footer>
   <section class="modal-write-us">
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <h2 class="visually-hidden">Обратная связь</h2>
-      <p class="block-input">
-        <label for="write-us-name">Ваше имя:</label>
-        <input type="text" name="name" id="write-us-name" placeholder="Имя Фамилия" tabindex="-1"> 
-      </p>
-      <p class="block input">
-        <label for="write-us-email">Ваш e-mail:</label>
-        <input type="email" name="email" id="write-us-email" placeholder="email@example.com" tabindex="-1">
-      </p>
-      <p class="block-textarea">
-        <label for="write-us-message">Текст письма:</label>
-        <textarea name="message" id="write-us-message" placeholder="В свободной форме" tabindex="-1"></textarea>
-      </p>
-      <p class="block-button">
-        <button class="button" type="submit" tabindex="-1" aria-label="Закрыть форму">Отправить</button>
-      </p>
-    </form> 
     <label for="close-write-us-popup" class="visually-hidden">Закрытие окна</label>
     <button type="button" id="close-write-us-popup" class="close" tabindex="-1"></button>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <div class="write-us-header">
+        <p class="block-input-name">
+          <label for="write-us-name">Ваше имя:</label>
+          <input type="text" name="name" id="write-us-name" placeholder="Имя Фамилия" tabindex="-1"> 
+        </p>
+        <p class="block-input-email">
+          <label for="write-us-email">Ваш e-mail:</label>
+          <input type="email" name="email" id="write-us-email" placeholder="email@example.com" tabindex="-1">
+        </p>
+        <p class="block-textarea">
+          <label for="textarea">Текст письма:</label>
+          <textarea name="message" id="write-us-message" placeholder="В свободной форме" tabindex="-1"></textarea>
+        </p>
+      </div>
+      <div class="write-us-footer"> 
+        <p class="block-button">
+          <button class="send-button" type="submit" tabindex="-1" aria-label="Закрыть форму">Отправить</button>
+        </p>
+      </div>  
+    </form>
   </section>
+  <section class="modal-content-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6
+      03787253323!2d30.320858716022837!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768
+      !4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQv
+      tC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoN
+      C-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1551307711436" width="900" height="446.2"></iframe>
+      <label for="close-content-map" class="visually-hidden">Закрытие окна</label>
+      <button type="button" id="close-content-map" class="close" tabindex="-1"></button>
+    </section>
 </body>
 </html>
