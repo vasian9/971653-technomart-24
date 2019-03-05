@@ -52,7 +52,8 @@
                 <a class="user-profile-link" href="#">Личный кабинет</a>
               </li>  
             </ul>
-          </div>  
+          </div> 
+        </div>   
       </section>    
         <nav class="main-navigation">
           <ul class="site-navigation">
@@ -84,7 +85,7 @@
   <main class="inner-page">
     <ul class="breadcrumbs container-center">
       <li><a class="breadcrumbs-item icon-home" href="index.html">
-          <img src="img/icon-home.svg"><span>Главная</span></a> 
+          <img src="img/icon-home.svg" alt="Возврат на главную"><span>Главная</span></a> 
       </li>
       <li><a class="breadcrumbs-link" href="catalog.html">Каталог</a></li>
       <li><a class="breadcrumbs-link" href="#">Инструмент</a></li>
@@ -93,6 +94,30 @@
     <h1 class="inner-header-title page-title">Перфораторы</h1>
     <div class="catalog-columns">
       <section class="filters">
+        <b>Фильтр:</b>
+        <fieldset class="filter-price">
+          <legend>Цена:</legend>
+          <div class="price-range">
+            <div class="price-range-first"><span class="visually-hidden">
+            Круг фильтра</span></div>
+            <div class="price-range-second"><span class="visually-hidden">
+            Круг фильтра</span></div>
+          </div>
+          <ul class="price-range-input">
+            <li>
+              <input type="text" name="min-price" id="min-price"
+              placeholder="0">
+              <label for="min-price"><span class="visually-hidden">
+              Минимальная цена</span></label>
+            </li>
+            <li>
+              <input type="text" name="max-price" id="max-price"
+              placeholder="30000">
+              <label for="max-price"><span class="visually-hidden">
+              Маскимальная цена</span></label>
+            </li>
+          </ul>
+        </fieldset>
         <fieldset class="filter filter-brands">
           <h3 class="filter-title">Производители</h3>
           <div>
