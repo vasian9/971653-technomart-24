@@ -747,45 +747,14 @@ background-image: url(../img/icon-logout.1.svg), url(../img/icon-user.1.svg);
 
 .products-item {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row;
     justify-content: space-between;
     padding: 0;
     margin: 0;
 }
 
-.products-item img {
-    width: 218px;
-    height: 168px;
-}
-
-.product-card-popular {
-    width: 220px;
-    min-height: 318px;
-    list-style: none;
-    border: 1px solid #e5e5e5;
-    margin-top: 20px;
-    position: relative;
-}
-
-.product-card-popular:hover {
-    border: 1px solid #ffffff;
-    box-shadow: 0 8px 25px 5px rgba(41,52,73,0.2);
-}
-
-.products-item a {
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: bold;
-    color: #000000;
-}
-
-.products-item .product-card-discount,
-.product-card-price {
-    text-align: center;
-}
-
-.product-card-popular h3 {
-    text-align: center;
+.products-item .product-card-price {
+    padding: 8px 30px;
 }
 
 .brands-container-list {
@@ -1079,6 +1048,7 @@ fieldset {
     opacity: 0.3;
   }
 
+
 .catalog-btn {
     padding: 10px 38px 8px;
     margin-top: 61px;
@@ -1115,6 +1085,26 @@ fieldset {
     list-style: none;
 }
 
+.sorting {
+    padding: 11px 0 8px;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+  
+    background-color: #f7f3ec;
+    border-radius: 2px;
+    min-width: 560px;
+    height: 50px;
+  }
+
+.sorting a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .product-card {
     display: flex;
     position: relative;
@@ -1140,7 +1130,7 @@ fieldset {
 
 .product-card-title {
     width: 190px;
-    margin: 12px 0 40px;
+    margin: 7px 0 12px;
 
     font-size: 18px;
     line-height: 20px;
@@ -1169,7 +1159,7 @@ fieldset {
 }
 
 .product-card-price.only {
-    margin-top: 74px;
+    margin-top: 34px;
 }
 
 .product-card-price:after {
@@ -1234,7 +1224,6 @@ fieldset {
     line-height: 18px;
     text-decoration: none;
     text-transform: uppercase;
-
     cursor: pointer;
 }
 
