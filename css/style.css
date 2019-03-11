@@ -1086,23 +1086,44 @@ fieldset {
 }
 
 .sorting {
-    padding: 11px 0 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
     color: #000000;
-  
     background-color: #f7f3ec;
-    border-radius: 2px;
-    min-width: 560px;
-    height: 50px;
+    border-radius: 1px;
   }
 
-.sorting a {
-    display: inline-block;
-    vertical-align: middle;
+.sorting span {
+    padding: 10px 0 10px 18px;
+}
+
+.sorting ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 460px;
+}
+
+.sorting-by .sorting-up {
+    display: block;
+    width: 11px;
+    height: 10px;
+}
+
+.sorting-by .sorting-down {
+    display: block;
+    width: 11px;
+    height: 10px;
+    margin-right: 17px;
 }
 
 .product-card {
@@ -1970,11 +1991,13 @@ fieldset {
 
 .modal-content-map {
     position: fixed;
+    width: 904px;
+    height: 458px;
     top: 30%;
     left: 30%;
     box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
     background-color: #565656; 
-    display: none;
+    /* display: none; */
 }
 
 .close {
@@ -1983,8 +2006,8 @@ fieldset {
     border: none;
     background-color: transparent;
     position: absolute;
-    top: 3%;
-    left: 95%;
+    top: 3.5%;
+    left: 92%;
     background-image: url(../img/icon-close.svg);
     background-repeat: no-repeat;
 }
