@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    min-width: 1200px; 
     
     font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 14px;
@@ -869,7 +870,7 @@ fieldset {
     content: "";
     width: 120px;
     height: 2px;
-    background-color: #e5e5e5;
+    background-color: #00ca74;
     position: absolute;
     top: 9px;
     left: 20px;
@@ -879,7 +880,7 @@ fieldset {
     content: "";
     width: 20px;
     height: 2px;
-    background-color: #00ca74;
+    background-color: #e5e5e5;
     position: absolute;
     top: 9px;
     left: 20px;
