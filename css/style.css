@@ -285,6 +285,8 @@ ul {
     color: #32425c;
     text-align: center;
     margin: 0;
+    margin-left: -24px;
+    margin-top: 1px;
 }
 
 .top-info__adress {
@@ -429,6 +431,8 @@ background-image: url(../img/icon-logout.1.svg), url(../img/icon-user.1.svg);
     justify-content: center;
     padding: 0;
     list-style: none;
+    margin-top: -7px;
+    margin-left:-10px;
 }
 
 .main-navigation a {
@@ -546,7 +550,8 @@ background-image: url(../img/icon-logout.1.svg), url(../img/icon-user.1.svg);
     font-size: 24px;
     font-weight: bold;
     line-height: 30px;
-    color: #ffffff;    
+    color: #ffffff;
+    margin-bottom: 16px; 
 }
 
 .promo-slider {
@@ -618,7 +623,7 @@ background-image: url(../img/icon-logout.1.svg), url(../img/icon-user.1.svg);
 .promo-column {
     min-height: 123px;
     width: 300px;
-    padding-left: 20px;
+    padding-left: 19px;
     box-sizing: border-box;
 }
 
@@ -711,9 +716,9 @@ background-image: url(../img/icon-logout.1.svg), url(../img/icon-user.1.svg);
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 28px;
     padding-right: 24px;
-    margin-top: 10px;
+    margin-top: 52px;
 }
 
 .products-title h2, 
@@ -760,6 +765,7 @@ background-image: url(../img/icon-logout.1.svg), url(../img/icon-user.1.svg);
     justify-content: space-between;
     padding: 0;
     margin: 0;
+    margin-bottom: -36px;
 }
 
 .products-item .product-card-price {
@@ -770,6 +776,7 @@ background-image: url(../img/icon-logout.1.svg), url(../img/icon-user.1.svg);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 77px;
 }
 
 .brands__item {
@@ -919,7 +926,6 @@ fieldset {
     padding-bottom: 25px;
 }
 
-
 /* filter */
 
 .filter-brands div {
@@ -939,6 +945,7 @@ fieldset {
     line-height: 1.76;
     letter-spacing: normal;
     text-align: left;
+    margin-bottom: 5px;
     
     text-transform: uppercase;
     color: #000000;
@@ -952,6 +959,8 @@ fieldset {
     line-height: 1.76;
     letter-spacing: normal;
     text-align: left;
+    margin-top: 30px;
+    margin-bottom: 12px;
     
     text-transform: uppercase;
     color: #000000;
@@ -993,7 +1002,7 @@ fieldset {
 }
 
 .filter-brands div {
-    padding: 0 0 17px;
+    padding: 4px 0 13px;
 }
 
 .filter-supply div {
@@ -1213,6 +1222,7 @@ fieldset {
 
 .product-card-discount {
     min-height: 20px;
+    margin-bottom: -1px;
     
     color: #999;
     text-decoration: line-through;
@@ -1257,7 +1267,7 @@ fieldset {
     
     text-indent: -1000px;
     overflow: hidden;
-    z-index: 20;
+    z-index: 11;
 }
 
 .product-card .flag-new {
@@ -1273,7 +1283,7 @@ fieldset {
     height: 88px;
     padding: 40px 0;
     
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,1);
     z-index: 10;
 }
 
@@ -1308,11 +1318,15 @@ fieldset {
   
 .product-card-actions {
     display: none;
-  }
+}
   
-  .product-card:hover .product-card-actions {
+.product-card:hover .product-card-actions {
     display: block;
-  }
+}
+
+.product-card-actions:hover {
+    opacity: 1;
+}
   
 .icon-basket {
     background-image: url(../img/icon-cart-catalog.svg);
@@ -1359,8 +1373,9 @@ fieldset {
 }
 
 .pagination {
-    margin-top: 48px;
+    margin-top: 28px;
     margin-bottom: 61px;
+    margin-left: 240px;
 }
 
 .pagination-item {
@@ -1502,7 +1517,6 @@ fieldset {
     margin-left: 80px;
 }
 
-
 .slider-info-delivery {
     position: relative;
     width: 100%;
@@ -1511,10 +1525,9 @@ fieldset {
 .slider-info-delivery-img {
     position: absolute;
     z-index: 1000;
-    top: 22px;
+    top: 20px;
     right: 0px;
 }
-
 
 .service-btn::before {
     content: '';
@@ -1662,13 +1675,21 @@ fieldset {
 
 .about-us-map img {
     margin-top: 20px;
+    margin-left: 15px;
 }
 
 .about-us-map button {
     padding: 10.5px 0 10.5px 0;
     text-align: center;
     margin-top: 30px;
+    margin-left: 15px;
 }
+
+.about-us-text {
+    margin-left: 14px;
+}
+
+
 
 .about-us-map button:hover {
     background-color: #ca2c37;
@@ -1714,6 +1735,10 @@ fieldset {
     padding: 9px 0;
     margin-top: 40px;
     width: 300px;
+}
+
+.about-us-map h2 {
+    margin-left: 14px;
 }
 
 /* Main Footer */
@@ -1776,7 +1801,8 @@ fieldset {
 }
 
 .footer-navigation ul:last-child {
-    padding-top: 35px;
+    padding-top: 30px;
+    margin-left: -10px;
 }
 
 .footer-navigation-top, 
@@ -1784,6 +1810,7 @@ fieldset {
     display: flex;
     justify-content: space-between;
     list-style: none;
+    margin-left: -10px
 }
 
 .footer-navigation a:hover {
@@ -1808,6 +1835,7 @@ fieldset {
     color: #f3f7f9;
     font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 18px;
+    
 
 }
 
@@ -1848,7 +1876,7 @@ fieldset {
 .social {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 160px;
+    margin-left: 150px;
 }
 
 .social a {
@@ -1891,11 +1919,12 @@ fieldset {
 }
 
 .feedback-info {
-    margin-left: 118px;
+    margin-left: 105px;
 }
 
 .developed-info {
-    margin-left: 54px;
+    margin-left: 53px;
+    margin-right: 16px;
 }
 
 .feedback-info p,
@@ -2005,7 +2034,6 @@ fieldset {
     background-repeat: no-repeat;
 }
 
-
 .modal-write-us {
     font-family: 'Cuprum', 'Arial', sans-serif;
     box-shadow: inset 0 7px 0 0 #ff5357, 
@@ -2016,6 +2044,7 @@ fieldset {
     position: fixed;
     top: 25%;
     left: 10%;
+    z-index: 12;
     display: none;
 }
 
@@ -2038,7 +2067,6 @@ fieldset {
 
 .block-input-email {
     padding-top: 35px;
-
 }
 
 .write-us-header label {
@@ -2046,7 +2074,6 @@ fieldset {
     line-height: 1.6;
     display: block;
     margin-bottom: 10px;
-    
 }
 
 .write-us-header input {
@@ -2117,6 +2144,7 @@ fieldset {
     left: 30%;
     box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
     background-color: #565656; 
+    z-index: 12;
     display: none;
 }
 
