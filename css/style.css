@@ -109,10 +109,10 @@ a {
     font-family: inherit;
     font-size: 17px;
     line-height: 18px;
-
  }
 
-.search:hover{
+
+.search:hover {
     background-color: #212a3a;
 }
 
@@ -120,6 +120,7 @@ a {
 .search:focus + svg {
     opacity: 1;
 }
+
 
 .search:focus ~ svg > path {
     fill: #ee3643;
@@ -901,9 +902,6 @@ fieldset {
     border: none;
 }
 
-fieldset:focus {
-    outline: 1px;
-}
 
 .filters {
     min-width: 217px;
