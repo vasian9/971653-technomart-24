@@ -121,7 +121,6 @@ a {
     opacity: 1;
 }
 
-
 .search:focus ~ svg > path {
     fill: #ee3643;
 }
@@ -1669,13 +1668,11 @@ fieldset {
     
 }
 
-
 .slider-info-guarantee-img {
     position: absolute;
     z-index: 1000;
     top: -2px;
     right: 0px;
-
 }
 
 .slider-info-loans {
@@ -1915,7 +1912,7 @@ fieldset {
 .footer-contacts p {
     width: 326px;
     height: 40px;
-    font-family: 'Cuprum' 'Arial', sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 18px;
     font-weight: normal;
     font-style: normal;
