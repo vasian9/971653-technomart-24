@@ -256,7 +256,7 @@ a {
 }
 
 .header-info-block p {
-    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-family: "Cuprum", 'Arial', sans-serif;
     font-size: 16px;
     line-height: 23px;
     font-weight: normal;
@@ -574,14 +574,15 @@ a {
     background-repeat: no-repeat;
 }
 
+
 .breadcrumbs-link {
     position: relative;
-    margin-left: 37px;
+    margin-left: 38px;
 }
 
 .page-title {
-    margin: 19px 0 20px;
-    padding: 30px 0 30px 32px;
+    margin: 16px 0 20px;
+    padding: 30px 0 30px 28px;
 
     font-size: 30px;
     line-height: 30px;
@@ -602,20 +603,13 @@ a {
 .promo {
     display: flex;
     margin-top: 60px;
+    flex-direction: column;
 }
 
 .promo-left,
 .promo-right {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: space-between;
     justify-content: space-between;
-    min-height: 410px;
-}
-
-.promo-right {
-    justify-content: flex-end;
 }
 
 .promo-slider-second {
@@ -652,6 +646,14 @@ a {
     padding-bottom: 12px;
     text-decoration: none;
     margin-top: 10px;
+}
+
+.promo-right {
+    margin-top: 20px;
+}
+
+.promo-delivery {
+    margin-top: 17px;
 }
 
 .promo-link:hover {
@@ -796,7 +798,7 @@ a {
     align-items: center;
     padding-left: 28px;
     padding-right: 24px;
-    margin: 56px 0px -2px 0px;
+    margin: 55px 0px -2px 0px;
 }
 
 .products-title h2,
@@ -892,7 +894,7 @@ a {
 .catalog-columns {
     display: flex;
     margin: auto;
-    margin-right: -22px;
+    margin-right: -26px;
 }
 
 fieldset {
@@ -904,7 +906,7 @@ fieldset {
 
 .filters {
     min-width: 217px;
-    margin-right: -1px;
+    margin-right: -2px;
 }
 
 .filters legend {
@@ -938,47 +940,46 @@ fieldset {
     border-bottom: 1px solid #f7f3ec;
 }
 
-.price-range {
+.filter__controls {
+    position: relative;
+    width: inherit;
     min-height: 80px;
+    margin-bottom: 9px;
+  
     background-color: #f7f3ec;
-    border-radius: 3px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 19px;
-    padding-right: 40px;
-    border: none;
-}
-
-.price-range-first,
-.price-range-second {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+  
+  .filter__scale {
+    width: 180px;
+    height: 2px;
+    position: absolute;
+    top: 49%;
+    left: 20px;
+  
+    background-image: linear-gradient(to right, #6ce6a6 80%, #d7dcde 20%);
+  }
+  
+  .filter__toggle {
+    position: absolute;
     width: 20px;
-    height: 22px;
+    height: 20px;
+    cursor: pointer;
+  
     background-image: url(../img/filter-button.svg);
     background-repeat: no-repeat;
-    position: relative;
-}
-
-.price-range-first:after {
-    content: "";
-    width: 120px;
-    height: 2px;
-    background-color: #00ca74;
-    position: absolute;
-    top: 9px;
+  }
+  
+  .filter__toggle--min {
+    top: 30px;
     left: 20px;
-}
-
-.price-range-second:after {
-    content: "";
-    width: 20px;
-    height: 2px;
-    background-color: #e5e5e5;
-    position: absolute;
-    top: 9px;
-    left: 20px;
-}
+  }
+  
+  .filter__toggle--max{
+    top: 30px;
+    right: 40px;
+  }
 
 .price-range-input {
     padding-top: 13px;
@@ -988,7 +989,6 @@ fieldset {
     padding: 0;
     margin: 0;
 }
-
 
 .price-range-input input {
     width: 95px;
@@ -1001,6 +1001,7 @@ fieldset {
     line-height: 18px;
     font-family: 'PT Sans', 'Arial', sans-serif;
 }
+
 
 .filter-price legend {
     font-size: 17px;
@@ -1022,6 +1023,10 @@ fieldset {
     line-height: 20px;
     text-transform: uppercase;
     color: #000000;
+}
+.filter:focus {
+  background: #ffe;
+  border: 1px solid #29B0D9;
 }
 
 .filter-brands h3 {
@@ -1046,7 +1051,8 @@ fieldset {
     line-height: 1.76;
     letter-spacing: normal;
     text-align: left;
-    margin-top: 30px;
+    margin-left: 1px;
+    margin-top: 25px;
     margin-bottom: 12px;
 
     text-transform: uppercase;
@@ -1090,7 +1096,7 @@ fieldset {
 }
 
 .filter-brands div {
-    padding: 4px 0 13px;
+    padding: 5px 0 13px;
 }
 
 .filter-supply div {
@@ -1275,6 +1281,14 @@ fieldset {
     opacity: 1;
 }
 
+.product-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px 25px 0px 3px;
+}
+
 .product-card {
     display: flex;
     position: relative;
@@ -1293,6 +1307,11 @@ fieldset {
     background-color: #ffffff;
     border: 1px solid #eaeaea;
 }
+.product-card.catalog {
+    margin-right: 0px;
+}
+
+:nth-child(3)
 
 .product-card:hover,
 .product-card:focus {
@@ -1331,7 +1350,7 @@ fieldset {
 }
 
 .product-card-price.only {
-    margin-top: 34px;
+    margin-top: 29px;
 }
 
 .product-card-price:after {
@@ -1463,7 +1482,7 @@ fieldset {
 }
 
 .pagination {
-    margin-top: 28px;
+    margin-top: 32px;
     margin-bottom: 61px;
     margin-left: 240px;
 }
@@ -1514,7 +1533,7 @@ fieldset {
 }
 
 .perforators-text h2 {
-    padding-top: 66px;
+    padding: 65px 0px 0px 2px;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
@@ -1525,6 +1544,8 @@ fieldset {
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 1.85;
+    width: 100%;
+    text-align: justify;
 }
 
 .main-footer {
